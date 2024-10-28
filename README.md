@@ -1,5 +1,5 @@
-# URL_Shortner_API
-This repository contains a URL Shortner API designed to create a unique short URL given a long URL, redirect the users to the original URL when the short URL is accessed and supports automatic expirations of URLs after a set period.
+# URL_Shortener_API
+This repository contains a URL Shortener API designed to create a unique short URL given a long URL, redirect the users to the original URL when the short URL is accessed and supports automatic expirations of URLs after a set period.
 
 ## Functional Requirements
 The URL Shortener API supports the following key features:
