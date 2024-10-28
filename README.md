@@ -71,12 +71,14 @@ To ensure smooth operation at scale, we suggest following improvements:
 ## Instructions to run directly from the git clone
   - Clone the repository
 ```bash
- git clone [https://github.com/sasidv/URL_Shortner_API_Design.git]
+ git clone https://github.com/sasidv/URL_Shortener_API_Design.git
 ```
   - Install the dependencies
 ```bash
 pip install -r requirements.txt
 ```
+  - Install MySQL, and start a new MySQL connection with the name TEST.
+    
   - Start the Flask API Server
 ```bash
 python src/server/server.py.
@@ -91,4 +93,4 @@ python src/test/server/test_server.py
 python src/test/server/test_validate.py
 ```
 ## Instructions to run in docker
-Plase check [README_DOCKER.md](https://github.com/sasidv/URL_Shortner_API_Design/blob/main/README_DOCKER.md)
+Plase check [README_DOCKER.md](https://github.com/sasidv/URL_Shortener_API_Design/blob/main/README_DOCKER.md)
