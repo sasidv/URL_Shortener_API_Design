@@ -69,6 +69,10 @@ To ensure smooth operation at scale, we suggest following improvements:
 - iii) The **test** Contains unit tests designed to validate API methods and ensure functionality.
 
 ## Instructions to run directly from the git clone
+  - Prerequisites
+      - Python 3.9 or higher
+      - MySQL database server
+  
   - Clone the repository
 ```bash
  git clone https://github.com/sasidv/URL_Shortener_API_Design.git
@@ -77,20 +81,20 @@ To ensure smooth operation at scale, we suggest following improvements:
 ```bash
 pip install -r requirements.txt
 ```
-  - Install MySQL, and start a new MySQL connection with the name TEST.
+  - Start a new MySQL connection with the name TEST.
     
-  - Start the Flask API Server
+  - Start the Flask API Server in a new terminal
 ```bash
-python src/server/server.py.
+ PYTHONPATH=. python src/server/server.py
 ```
-  - Run the Client
+  - Run the Client in another terminal
 ```bash
-python src/client/client_simple.py.
+PYTHONPATH=. python src/client/client_simple.py
 ```
   - Run unit tests
 ```bash
-python src/test/server/test_server.py
-python src/test/server/test_validate.py
+PYTHONPATH=. python test/server/test_server.py
+PYTHONPATH=. python test/server/test_validate.py
 ```
 ## Instructions to run in docker
 Plase check [README_DOCKER.md](https://github.com/sasidv/URL_Shortener_API_Design/blob/main/README_DOCKER.md)
